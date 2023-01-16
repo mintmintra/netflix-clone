@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "./components/Header/Header"
-import Enjoy from "./components/Header/Enjoy/Enjoy"
+import Enjoy from "./components/Enjoy/Enjoy"
 import './App.css'
 
 function App() {
