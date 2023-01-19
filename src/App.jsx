@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./components/Header/Header"
 import Enjoy from "./components/Enjoy/Enjoy"
+import Download from "./components/Download/Download"
 import './App.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Enjoy />
+      <Download />
     </div>
   )
 }
