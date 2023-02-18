@@ -1,4 +1,4 @@
-import React from "react"
+import React,{ useState} from "react"
 import Header from "./components/Header/Header"
 import Enjoy from "./components/Enjoy/Enjoy"
 import Download from "./components/Download/Download"
@@ -7,7 +7,9 @@ import Kids from "./components/Kids/Kids"
 import Questions from "./components/Questions/Questions"
 import './App.css'
 
+import data from './data'
 function App() {
+  const [questions, setQuestions] = useState(data)
 
   return (
     <div>
@@ -16,7 +18,9 @@ function App() {
       <Download />
       <Watch />
       <Kids />
-      <Questions />
+      {questions.map((question) => {
+        return <Questions key={question.id} {...question} />
+      })}
     </div>
   )
 }

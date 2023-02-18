@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState} from 'react'
+import { QuestionsCon } from './Styled';
 
-const Questions = () => {
+const Questions = ({ title, info }) => {
+
+    const [showInfo, setShowInfo] = useState(false);
   return (
-    <div>Questions</div>
+    <QuestionsCon>
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <div style={{ background: '#303030', fontSize: '1.5rem', width: "650px", marginBottom: "0.5rem", display: "flex", justifyContent: "space-between"}}>
+          <h3>{title}</h3>
+          <button onClick={() => setShowInfo(!showInfo)}>
+              {showInfo ? '-' : '+'}
+          </button>
+        </div>
+      </div>
+      {showInfo && <p style={{ background: '#303030', fontSize: '0.9rem', width: "650px", padding: "1rem 2rem"}}>{info}</p>}
+    </QuestionsCon>
   )
 }
 
