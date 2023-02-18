@@ -4,6 +4,7 @@ import Enjoy from "./components/Enjoy/Enjoy"
 import Download from "./components/Download/Download"
 import Watch from "./components/Watch/Watch"
 import Kids from "./components/Kids/Kids"
+import Questions from "./components/Questions/Questions"
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Download />
       <Watch />
       <Kids />
+      <Questions />
     </div>
   )
 }
