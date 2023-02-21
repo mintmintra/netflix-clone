@@ -14,7 +14,9 @@ const Questions = ({ title, info }) => {
           </button>
         </div>
       </div>
-      {showInfo && <p style={{ background: '#303030', fontSize: '0.9rem', width: "650px", padding: "1rem 2rem"}}>{info}</p>}
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        {showInfo && <p style={{ background: '#303030', fontSize: '0.9rem', width: "650px", padding: "1rem 2rem"}}>{info}</p>}
+      </div>
     </QuestionsCon>
   )
 }
