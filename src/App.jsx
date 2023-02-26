@@ -5,6 +5,7 @@ import Download from "./components/Download/Download"
 import Watch from "./components/Watch/Watch"
 import Kids from "./components/Kids/Kids"
 import Questions from "./components/Questions/Questions"
+import Footer from "./components/Footer/Footer"
 import './App.css'
 
 import data from './data'
@@ -25,8 +26,9 @@ function App() {
         })}
         <p style={{ margin: "2rem 0", fontSize: "1.2rem"}}>หากพร้อมรับชม ป้อนอีเมลเพื่อสร้างหรือเริ่มต้นการเป็นสมาชิกอีกครั้ง</p>
         <input style={{ width: "500px", padding: "1.5rem 2rem"}} type="email" placeholder="ที่อยู่อีเมล" />
-        <button style={{ width: "200px", padding: "1.5rem 1rem", color: '#fff', backgroundColor: '#e50914', fontSize: "1rem", border: "none", position: "relative", top: "3px"}} type="submit">เริ่มต้นใช้งาน</button>
+        <button style={{ width: "200px", padding: "1.5rem 1rem", color: '#fff', backgroundColor: '#e50914', fontSize: "1rem", border: "none", position: "relative", top: "3px"}} type="submit">เริ่มต้นใช้งาน ></button>
       </div>
+      <Footer />
     </div>
   )
 }
